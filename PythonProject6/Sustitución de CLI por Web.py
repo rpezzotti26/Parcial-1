@@ -1,0 +1,12 @@
+import os
+from flask import Flask, render_template, request, redirect, url_for
+from redis import Redis
+from dotenv import load_dotenv
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'your_secret_key')
+
+REDIS_HOST = os.environ.get('REDIS_HOST', 'localhost')
+REDIS_PORT = int(os.environ.get('REDIS_PORT', 6379))
+REDIS_DB = int(os.environ.get('REDIS_DB', 0))
+db = Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB)
