@@ -1,0 +1,6 @@
+Flask
+Flask-RESTful
+# Si necesitas una base de datos para la API (opcional para este paso,
+# podrías simular los datos en memoria al principio)
+# Flask-SQLAlchemy
+# SQLAlchemy
