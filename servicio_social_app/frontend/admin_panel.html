@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Crear Nuevo Evento</h2>
+    <form id="create-event-form">
+        <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"><br>
+        <label for="descripcion">Descripción:</label><textarea id="descripcion" name="descripcion"></textarea><br>
+        <label for="fecha">Fecha:</label><input type="date" id="fecha" name="fecha"><br>
+        <label for="hora">Hora:</label><input type="time" id="hora" name="hora"><br>
+        <label for="lugar">Lugar:</label><input type="text" id="lugar" name="lugar"><br>
+        <label for="tipo">Tipo:</label><input type="text" id="tipo" name="tipo"><br>
+        <button type="submit">Crear Evento</button>
+    </form>
+
+    <h2>Lista de Eventos (Administración)</h2>
+    <ul id="admin-event-list"></ul>
+
+    <script src="js/admin_script.js"></script>
+</body>
+</html>
